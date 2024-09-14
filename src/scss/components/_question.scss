@@ -1,0 +1,30 @@
+.question {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  background-color: $light;
+  transition: opacity 0.5s ease-in-out;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    font-size: 15px;
+  }
+
+  &__title {
+    font-weight: 700;
+  }
+
+  &__answers {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+  }
+
+  &__btn {
+    @extend .main-btn;
+  }
+}

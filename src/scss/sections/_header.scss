@@ -1,0 +1,30 @@
+.header {
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 50px;
+    background-color: $dark-blue--700;
+    padding: 12px 10px;
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 35px;
+    font-size: 12px;
+    font-weight: 700;
+    color: $light;
+    background-color: $dark-blue--500;
+    padding: 10px;
+  }
+
+  &__title {
+    text-wrap: balance;
+  }
+
+  &__date {
+    white-space: nowrap;
+  }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/style.scss" />
+    <title>test_task by Vadim Khripko</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <img src="./src/img/menu-top.png" alt="menu-logo" />
+        <img src="./src/img/cart.png" alt="cart" />
+      </div>
+      <div class="header__bottom">
+        <h1 class="header__title">
+          O plano para os VIPs da Amazonas (somente em Portugal)
+        </h1>
+        <p class="header__date">setembro 14 2024</p>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section class="hero">
+          <h2 class="hero__title">Parabéns!</h2>
+          <p class="hero__text">
+            Hoje dia 14 de setembro 2024 o senhor foi escolhide para participar
+            essa pesquisa. É somente um minuto, o senhor poderia ganhar um
+            prémio supresa: um novo Iphone 11 Pro!
+          </p>
+          <div class="hero__image">
+            <img src="./src/img/princ.png" alt="" />
+          </div>
+          <div class="hero__content">
+            <p class="hero__text">
+              Todas Sábado , nós vamos escolhor 100 usuários, todos deles vão
+              ter chance de ganhar um prémio maravilhosa. O prémio de hoje é um
+              novo iPhone 11 Pro! Vai ter 100 vencedores sortudo que vão ganhar.
+              Somente para quem está em Portugal!
+            </p>
+            <p class="hero__text">
+              Essa pesquisa serve para oferecer os nosso usuários melhor
+              serviços!
+            </p>
+            <p class="hero__text">
+              O senhor tem soment
+              <span class="hero__text--accent">0 minutos e 00 segundos</span>
+              para participar
+            </p>
+            <p class="hero__text">Rápido, lembrando que o prémio é limitado!</p>
+          </div>
+          <div class="hero__box">{{> question}}</div>
+        </section>
+        <section class="reviews">
+          <div class="reviews__head">
+            <h3 class="reviews__title">Mais opções</h3>
+            <div class="reviews__action-block">
+              <textarea
+                class="reviews__textarea"
+                placeholder="Оставить коментарий"
+                name=""
+                id=""
+              ></textarea>
+              <button type="submit" class="main-btn reviews__btn">
+                Опубликовать
+              </button>
+            </div>
+          </div>
+          <div class="reviews__comment-container">
+            {{> comment }}
+          </div>
+        </section>
+      </div>
+    </main>
+    <script type="module" src="./src/js/script.js"></script>
+  </body>
+</html>

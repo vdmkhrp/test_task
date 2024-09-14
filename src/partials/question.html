@@ -1,0 +1,13 @@
+{{#each questions}}
+<div class="question">
+  <div class="question__content">
+    <h3 class="question__title">Questão {{index}}/{{totalQuestions}}:</h3>
+    <p class="question__description">{{description}}</p>
+  </div>
+  <div class="question__answers">
+    {{#each answers}}
+    <button type="button" class="question__btn">{{this}}</button>
+    {{/each}}
+  </div>
+</div>
+{{/each}}
