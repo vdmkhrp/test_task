@@ -5,22 +5,18 @@ const __dirname = dirname(new URL(import.meta.url).pathname);
 
 const questions = [
   {
-    index: 1,
     description: "Qual é o seu gênero?",
     answers: ["Masculino", "Femenino"],
   },
   {
-    index: 2,
     description: "Qual é a sua idade?",
     answers: ["18-29", "30-39", "40-49", "50+"],
   },
   {
-    index: 3,
     description: "Quantas pessoas existem na sua família?",
     answers: ["1", "2", "3+"],
   },
   {
-    index: 4,
     description: "Nos passados já comprou iPhone XS do Apple?",
     answers: ["Sim", "Não"],
   },
@@ -123,10 +119,6 @@ export default {
   partialDirectory: resolve(__dirname, "src/partials"),
   context: {
     questions: questions,
-    totalQuestions: questions.length,
     comments: comments,
-  },
-  helpers: {
-    addOne: (index) => index + 1,
   },
 };

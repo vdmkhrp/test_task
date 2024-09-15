@@ -21,7 +21,7 @@ const getHtmlInputs = () => {
 
 export default defineConfig({
   root: __dirname,
-  base: "",
+  base: "./",
   plugins: [
     handlebars({
       ...handlebarsConfig,

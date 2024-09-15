@@ -7,8 +7,13 @@
 @import "./scss/components/main-btn";
 @import "./scss/components/question";
 @import "./scss/components/comment";
+@import "./scss/components/popover";
+@import "./scss/components/overlay";
 
 //sections
 @import "./scss/sections/header";
 @import "./scss/sections/hero";
 @import "./scss/sections/reviews";
+
+//utils
+@import "./scss/utils/helper";

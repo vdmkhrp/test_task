@@ -13,6 +13,7 @@
     <title>test_task by Vadim Khripko</title>
   </head>
   <body>
+    <div class="overlay"></div>
     <header class="header">
       <div class="header__top">
         <img src="./src/img/menu-top.png" alt="menu-logo" />
@@ -56,25 +57,52 @@
             <p class="hero__text">Rápido, lembrando que o prémio é limitado!</p>
           </div>
           <div class="hero__box">{{> question}}</div>
+          <div class="popover" popover="manual">
+            <div class="popover__body">
+              <div class="popover__image">
+                <img src="./src/img/img-2.png" alt="img" />
+              </div>
+              <h6 class="popover__title">O senhor conseguiu!</h6>
+              <p class="popover__text">***As regras***</p>
+              <p class="popover__text">
+                Parabéns! O senhor ganhou um iPhone 11 Pro！
+              </p>
+              <p class="popover__text">***As regras***</p>
+              <ol class="popover__list">
+                <li class="popover__list-item">
+                  O senhor vai ser localizado na site do nosso revendedor
+                  certificado
+                </li>
+                <li class="popover__list-item">
+                  Entrada o endereço do senhor, precisa somente
+                  <span>€1.00</span> você poderá comprar um novo iPhone 11 Pro,
+                  incluindo frete.
+                </li>
+                <li class="popover__list-item">
+                  Seu iPhone11 Pro será enviado dentro de 5 a 7 dias.
+                </li>
+              </ol>
+              <button type="submit" class="submit-btn popover__btn">ok</button>
+            </div>
+          </div>
         </section>
         <section class="reviews">
           <div class="reviews__head">
             <h3 class="reviews__title">Mais opções</h3>
-            <div class="reviews__action-block">
+            <form class="reviews__form">
               <textarea
                 class="reviews__textarea"
                 placeholder="Оставить коментарий"
-                name=""
-                id=""
+                name="message"
+                id="message"
+                required
               ></textarea>
               <button type="submit" class="main-btn reviews__btn">
                 Опубликовать
               </button>
-            </div>
+            </form>
           </div>
-          <div class="reviews__comment-container">
-            {{> comment }}
-          </div>
+          <div class="reviews__comment-container">{{> comment }}</div>
         </section>
       </div>
     </main>
