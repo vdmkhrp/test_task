@@ -1,5 +1,5 @@
-import userImg from "../img/user.png";
-import likeImg from "../img/like.png";
+import userImg from "../img/user.webp";
+import likeImg from "../img/like.webp";
 
 document.addEventListener("DOMContentLoaded", () => {
   const questions = document.querySelectorAll(".question");
